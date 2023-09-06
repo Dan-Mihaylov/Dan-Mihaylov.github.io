@@ -44,7 +44,7 @@ body {
     top: 10px;
     right: 10px;
     z-index: 1;
-    background-color: rgba(0, 53, 102, 0.4);
+    background-color: rgba(0, 53, 102, 0);
     border: none;
     border-radius: 10px;
 }

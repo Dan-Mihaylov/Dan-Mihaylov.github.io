@@ -1,6 +1,11 @@
 body {
-    background-color: rgba(0, 8, 20, 1);
+    background-color: rgba(0, 53, 102, 1);
+    font-family: 'Josefin Sans', sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
+
+
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital@1&family=Poppins:wght@100&display=swap');
 
 .main-wrapper {
     position: absolute;
@@ -44,9 +49,9 @@ body {
     top: 10px;
     right: 10px;
     z-index: 1;
-    background-color: rgba(0, 53, 102, 0.4);
     border: none;
     border-radius: 10px;
+    background-color: rgba(0, 8, 20, 0);
 }
 
 #openNavButton img {
@@ -113,5 +118,114 @@ body {
     align-items: center;
     text-align: center;
     border-radius: 10px;
-    box-shadow: 0 0.5px 1px 1px  rgba(255, 195, 0, 0.2);
+    border: 1px solid rgba(255, 195, 0, 0.2);
+}
+
+/* From here content wrapper */
+
+.content-wrapper {
+    position: absolute;
+    display: block;
+    top: 90px;
+    left: 5px;
+    right: 5px;
+    bottom: 5px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    border-radius: 10px;
+    color: rgba(255, 255, 230, 0.7);
+
+}
+
+.header-content {
+    width: 100%;
+    text-align: center;
+    overflow-wrap:normal;
+    background-color: rgba(0, 8, 20);
+    border-radius: 10px;
+    padding-top: 10px;
+    padding-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-content h2 {
+    text-align: center;
+    width: 100%;
+    top: 20px;
+    right: 20px;
+}
+
+.header-content p {
+    text-align: center;
+    width: 200px;
+}
+
+.header-content img {
+    max-width: 200px;
+    border-radius: 10px;
+    box-shadow: 1px 0 6px 1px rgba(255, 195, 0, 0.2);
+}
+
+.divider {
+    position: relative;
+    left: 10%;
+    border: none;
+    width: 80%;
+    border-top: 1px dotted rgba(255, 195, 0, 0.2); 
+    margin-top: 25px;
+    margin-bottom: 25px;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.roadmap-content {
+    width: 100%;
+    text-align: center;
+    overflow-wrap:normal;
+    background-color: rgba(0, 8, 20);
+    border-radius: 10px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.description-box {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    border: 1px solid rgba(255, 195, 0, 0.2);
+
+}
+
+.description-box h3 {
+    font-family: 'Josefin Sans', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    font-size: 25px;
+}
+
+.description-box p {
+    font-family: 'Josefin Sans', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    text-align: justify;
+    width: 95%;
+
+}
+
+.tick {
+    width: 40px;
+    padding: 10px;
+    border: 0.5px solid rgba(255, 195, 0, 0.1);
+    border-radius: 40px 10px 40px 10px;
+    margin-bottom: 25px;
 }
