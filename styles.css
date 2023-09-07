@@ -1,7 +1,8 @@
 body {
-    background-color: rgba(0, 53, 102, 1);
+    background-color: rgba(33, 158, 188, 1);
     font-family: 'Josefin Sans', sans-serif;
     font-family: 'Poppins', sans-serif;
+    line-height: 1.5em;
 }
 
 
@@ -22,7 +23,7 @@ body {
     top: 0;
     left: 0;
     right: 0;
-    bottom: calc(100% - 85px);
+    bottom: calc(100% - 60px);
     background-color: rgba(255, 195, 0, 1);
 }
 
@@ -31,13 +32,13 @@ body {
     text-align: center;
     right: 0;
     left: 0;
-    bottom: calc(50% - 42.5px);
+    bottom: calc(100% - 60px);
 }
 
 .navbar-header p {
     color: rgba(0, 8, 20, 1);
     font-size: 35px;
-    line-height: 85px;
+    line-height: 60px;
     margin: 0;
     padding: 0;
 }
@@ -46,7 +47,7 @@ body {
 
 #openNavButton {
     position: absolute;
-    top: 10px;
+    top: 0px;
     right: 10px;
     z-index: 1;
     border: none;
@@ -60,32 +61,41 @@ body {
 
 }
 
-/* Style for the navigation window */
+
 .nav-window {
-    display: none;
-    position: absolute;
-    top: 0;
+    display: block;
+    position: fixed;
+    top: -100%;
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 8, 20);
+    background-color: rgba(0, 8, 20, 0.9);
     color:antiquewhite;
     z-index: 2;
+    transition: top 0.5s ease;
+}
+
+
+/* CSS for the blur effect */
+.content-wrapper.blur {
+    filter: blur(5px); 
+    transition: filter 1s ease;
 }
 
 .close-button {
     position: absolute;
-    top: 10px;
+    top: 0px;
     right: 10px;
     z-index: 1;
-    background-color:rgba(255, 195, 0, 0.1);
     border: none;
     border-radius: 10px;
+    background-color:rgba(255, 195, 0, 0.1);
+    padding: 0;
 }
 
 .close-button img {
-    max-width: 60px;
-    max-height: 60px;
+    max-width: 55px;
+    max-height: 55px;
 }
 
 .nav-window ul {
@@ -126,13 +136,12 @@ body {
 .content-wrapper {
     position: absolute;
     display: block;
-    top: 90px;
-    left: 5px;
-    right: 5px;
-    bottom: 5px;
+    top: 60px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
     overflow-y: scroll;
     overflow-x: hidden;
-    border-radius: 10px;
     color: rgba(255, 255, 230, 0.7);
 
 }
@@ -141,17 +150,21 @@ body {
     width: 100%;
     text-align: center;
     overflow-wrap:normal;
-    background-color: rgba(0, 8, 20);
-    border-radius: 10px;
     padding-top: 10px;
     padding-bottom: 50px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    color: rgba(12, 25, 46, 1);
+    /* text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.5); */
+    /* background-color: rgba(170, 130, 0, 0.2); */
 }
 
 .header-content h2 {
+    font-weight: 50;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-variant: small-caps;
     text-align: center;
     width: 100%;
     top: 20px;
@@ -159,14 +172,41 @@ body {
 }
 
 .header-content p {
+    font-variant: small-caps;
     text-align: center;
     width: 200px;
 }
 
 .header-content img {
-    max-width: 200px;
+    max-width: 380px;
     border-radius: 10px;
-    box-shadow: 1px 0 6px 1px rgba(255, 195, 0, 0.2);
+    background-color: rgba(0, 8, 20, 0.8);
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    
+}
+
+.personal-info-div {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid rgba(0, 8, 20, 1);
+    padding-left: 10px;
+    border-radius: 10px;
+}
+
+.personal-info-div h2 {
+    text-align: left;
+    font-family: 'Josefin Sans', sans-serif;
+    font-family: 'Poppins', sans-serif;
+}
+
+.personal-info-div p {
+    width: 95%;
+    text-align: justify;
+    font-family: 'Josefin Sans', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    font-variant: normal;
 }
 
 .divider {
@@ -186,13 +226,13 @@ body {
     text-align: center;
     overflow-wrap:normal;
     background-color: rgba(0, 8, 20);
-    border-radius: 10px;
     padding-top: 50px;
     padding-bottom: 50px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    line-height: 1.5em;
 
 }
 
@@ -224,8 +264,20 @@ body {
 
 .tick {
     width: 40px;
-    padding: 10px;
-    border: 0.5px solid rgba(255, 195, 0, 0.1);
-    border-radius: 40px 10px 40px 10px;
+    padding: 2px 0px 2px 4px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
     margin-bottom: 25px;
+    background-color: rgba(0,0,0, 0.5);;
+}
+
+.arrow-div {
+    margin: 20px 0 20px 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.arrow-div img {
+    max-width: 50px;
 }

@@ -1,6 +1,11 @@
 body {
-    background-color: rgba(0, 8, 20, 1);
+    background-color: rgba(33, 158, 188, 1);
+    font-family: 'Josefin Sans', sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
+
+
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital@1&family=Poppins:wght@100&display=swap');
 
 .main-wrapper {
     position: absolute;
@@ -17,7 +22,7 @@ body {
     top: 0;
     left: 0;
     right: 0;
-    bottom: calc(100% - 85px);
+    bottom: calc(100% - 60px);
     background-color: rgba(255, 195, 0, 1);
 }
 
@@ -26,13 +31,13 @@ body {
     text-align: center;
     right: 0;
     left: 0;
-    bottom: calc(50% - 42.5px);
+    bottom: calc(100% - 60px);
 }
 
 .navbar-header p {
     color: rgba(0, 8, 20, 1);
     font-size: 35px;
-    line-height: 85px;
+    line-height: 60px;
     margin: 0;
     padding: 0;
 }
@@ -41,12 +46,12 @@ body {
 
 #openNavButton {
     position: absolute;
-    top: 10px;
+    top: 0px;
     right: 10px;
     z-index: 1;
-    background-color: rgba(0, 53, 102, 0);
     border: none;
     border-radius: 10px;
+    background-color: rgba(0, 8, 20, 0);
 }
 
 #openNavButton img {
@@ -55,32 +60,41 @@ body {
 
 }
 
-/* Style for the navigation window */
+
 .nav-window {
-    display: none;
-    position: absolute;
-    top: 0;
+    display: block;
+    position: fixed;
+    top: -100%;
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 8, 20);
+    background-color: rgba(0, 8, 20, 0.9);
     color:antiquewhite;
     z-index: 2;
+    transition: top 0.5s ease;
+}
+
+
+/* CSS for the blur effect */
+.content-wrapper.blur {
+    filter: blur(5px); /* Adjust the blur amount as needed */
+    transition: filter 1s ease;
 }
 
 .close-button {
     position: absolute;
-    top: 10px;
+    top: 0px;
     right: 10px;
     z-index: 1;
-    background-color:rgba(255, 195, 0, 0.1);
     border: none;
     border-radius: 10px;
+    background-color:rgba(255, 195, 0, 0.1);
+    padding: 0;
 }
 
 .close-button img {
-    max-width: 60px;
-    max-height: 60px;
+    max-width: 55px;
+    max-height: 55px;
 }
 
 .nav-window ul {
@@ -113,5 +127,5 @@ body {
     align-items: center;
     text-align: center;
     border-radius: 10px;
-    box-shadow: 0 0.5px 1px 1px  rgba(255, 195, 0, 0.2);
+    border: 1px solid rgba(255, 195, 0, 0.2);
 }
