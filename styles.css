@@ -1,5 +1,5 @@
 body {
-    background-color: rgba(33, 158, 188, 1);
+    background-color: rgb(202, 239, 250);
     font-family: 'Josefin Sans', sans-serif;
     font-family: 'Poppins', sans-serif;
     line-height: 1.5em;
@@ -178,11 +178,11 @@ body {
 }
 
 .header-content img {
-    max-width: 380px;
-    border-radius: 10px;
-    background-color: rgba(0, 8, 20, 0.8);
+    max-width: 250px;
+    border-radius: 50%;
+    background-color: rgba(0, 8, 20, 1);
     box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
-    border: 1px solid rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.5);
     
 }
 
@@ -190,7 +190,8 @@ body {
     width: 90%;
     display: flex;
     flex-direction: column;
-    border: 1px solid rgba(0, 8, 20, 1);
+    border: 1px solid rgba(0, 8, 20, 0.1);
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
     padding-left: 10px;
     border-radius: 10px;
 }
