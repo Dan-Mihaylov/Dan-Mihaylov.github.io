@@ -162,7 +162,7 @@ body {
 }
 
 .header-content h2 {
-    font-weight: 50;
+    font-weight: 100;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-variant: small-caps;
     text-align: center;
@@ -172,6 +172,7 @@ body {
 }
 
 .header-content p {
+    font-weight: 100;
     font-variant: small-caps;
     text-align: center;
     width: 200px;
