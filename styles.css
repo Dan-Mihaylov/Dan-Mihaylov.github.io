@@ -72,7 +72,8 @@ body {
     background-color: rgba(0, 8, 20, 0.9);
     color:antiquewhite;
     z-index: 2;
-    transition: top 0.5s ease;
+    transition: top 1s ease;
+    overflow-y: scroll;
 }
 
 
@@ -162,7 +163,7 @@ body {
 }
 
 .header-content h2 {
-    font-weight: 100;
+    font-weight: 200;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-variant: small-caps;
     text-align: center;
@@ -172,7 +173,7 @@ body {
 }
 
 .header-content p {
-    font-weight: 100;
+    font-weight: 200;
     font-variant: small-caps;
     text-align: center;
     width: 200px;
@@ -180,7 +181,7 @@ body {
 
 .header-content img {
     max-width: 250px;
-    border-radius: 50%;
+    border-radius: 20px;
     background-color: rgba(0, 8, 20, 1);
     box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
     border: 1px solid rgba(255, 255, 255, 0.5);
@@ -283,3 +284,21 @@ body {
 .arrow-div img {
     max-width: 50px;
 }
+
+.loading-circle {
+    border: 2px solid rgba(0, 8, 20);
+    border-top: 4px solid #199101;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    animation: spin 2s backwards infinite;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+

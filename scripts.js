@@ -15,7 +15,7 @@ document.addEventListener("DOMContentLoaded", function () {
     closeNavButton.addEventListener("click", function () {
         openNavButton.style.opacity = 1;
         contentWrapper.classList.remove("blur");
-        navWindow.style.top = "-100%"
+        navWindow.style.top = "-150%";
     });
 });
 
