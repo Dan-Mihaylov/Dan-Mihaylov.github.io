@@ -1,5 +1,5 @@
 body {
-    background-color: rgb(202, 239, 250);
+    background-color: rgb(239, 240, 241);
     font-family: 'Josefin Sans', sans-serif;
     font-family: 'Poppins', sans-serif;
     line-height: 1.5em;
@@ -300,5 +300,80 @@ body {
 @keyframes spin {
     0% { transform: rotate(0deg); }
     100% { transform: rotate(360deg); }
+}
+
+.certificates-description {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    background-color: rgba(2, 48, 71);
+    height: 100px;
+    flex-wrap: wrap;
+    text-align: center;
+    line-height: 30px;
+}
+
+@keyframes slide {
+    from {
+        transform: translateX(0%);
+    }
+    to {
+        transform: translateX(-100%);
+    }
+    
+}
+
+
+.logo_container {
+    position: relative;
+    background-color: rgba(2, 48, 71);
+    height: 600px;
+    width: 100%;
+    z-index: 2;
+    overflow: hidden;
+    white-space: nowrap;
+    display: flex;
+    align-items: center;
+}
+
+.logo_container:hover .carousel {
+    animation-play-state: paused;
+}
+
+.logo_container::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 20px;
+    height: 100%;
+    background: linear-gradient(to left, rgba(230, 144, 33, 0),  rgba(2, 48, 71));
+    content: "";
+    z-index: 2;
+} 
+
+.logo_container::after {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 10px;
+    height: 100%;
+    background: linear-gradient(to right, rgba(255, 255, 255, 0),  rgba(2, 48, 71));
+    content: "";
+    z-index: 2;
+} 
+
+.carousel {
+    animation: 20s slide infinite linear;
+    display: inline-block;
+}
+
+.carousel img {
+    height: 500px;
+    background-color: aquamarine;
+    margin: 0 40px;
+    border: 1px solid black;
+    border-radius: 10px;
+    z-index: 1;
 }
 
