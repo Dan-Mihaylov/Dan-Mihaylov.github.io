@@ -19,7 +19,7 @@
     <div class="navbar">
 
         <div class="navbar-header">
-            <p>HOME</p>
+            <p>itsmedan.uk</p>
         </div>
         
         <button id="openNavButton"><img src="images/menu-icon.png" alt=""></button>
@@ -33,7 +33,6 @@
 
             <ul>
                 <li><a href="index.html"><div >HOME</div></a></li>
-                <li><a href="about.html"><div>ABOUT</div></a></li>
                 <li><a href="projects.html"><div>PROJECTS</div></a></li>
                 <li><a href="#"><div>LINKEDIN</div></a></li>
                 <li><a href="https://github.com/Dan-Mihaylov"><div>GITHUB</div></a></li>
@@ -51,9 +50,43 @@
 
 
             <div class="header-content">
-                <h2>Daniel Mihaylov</h2>
-                <img src="images/main-photo.png" alt="Photo">
-                <p>Studying Software Development With Python At <a href="https://softuni.bg/">Softuni</a></p>
+
+                <div class="header-info-card-wrapper">
+                    <h2>Daniel Mihaylov</h2>
+
+                    <div class="header-info-card">
+
+                        <div class="card-image-div">
+                            <img class="profile-image" src="images/main-photo.png" alt="Photo">
+                            <p class="soft-paragraph">
+                                Studying Software <br>Development With Python At
+                                <a href="https://softuni.bg/">Softuni</a>
+                            </p>
+                        </div>
+
+                        <div class="header-info-card-skills">
+                            <h2 style="margin-top: 0;">Tech Stack:</h2>
+
+                            <div class="tech-stack">
+                                <img class="tech-logos" src="images/Python.svg" alt="python">
+                                <img class="tech-logos" src="images/postgres.svg" alt="postgres" >
+                                <img class="tech-logos" src="images/django.svg" alt="django" >
+                                <img class="tech-logos" src="images/html.svg" alt="html" >
+                                <img class="tech-logos" src="images/css.svg" alt="css" >
+
+                                <img class="tech-logos" src="images/pycharm.svg" alt="pycharm" >
+                                <img class="tech-logos" src="images/vscode.svg" alt="vscode" >
+                                <img class="tech-logos" src="images/git.svg" alt="git">
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>    <!--  header-info-card-end --->
+
+
+                <br style="margin-top: 50px">
 
                 <div class="personal-info-div">
                     <h2>personal information</h2>
@@ -65,7 +98,7 @@
                         and CSS's framework Boostrap.
                     </p>
                     <p>
-                        Beyond web developement, I am interested in learning PostreSQL and diving into data science with 
+                        Beyond web development, I am interested in learning PostreSQL and diving into data science with
                         Python libraries like NumPy, Pandas and Matplotlib. I am looking forward to learning to extract valuable insights from data
                         as well as visualising it.
                     </p>
@@ -83,15 +116,17 @@
             <div class="roadmap-content">
 
                 <h2 style="padding-bottom: 50px; width: 100%;">
-                    SOFTWARE DEVELOPEMENT ROADMAP
+                    SOFTWARE DEVELOPMENT ROADMAP
                 </h2>
 
-                <div class="description-box">
+
+                <div class="description-box" data-description-id="description1">
                     <h3>Python Basics</h3>
-                    <p>
+                    <h4 class="clickable-description" id="ex1">Expand Course Info</h4>
+                    <p class="clickable-description" id="description1">
                         Initial programming skills necessary. Writing entry-level programming code 
-                        working with a developement environment (IDE), using variables and data, operators
-                        and extenssions, working with the console (reading input and printing results),
+                        working with a development environment (IDE), using variables and data, operators
+                        and extensions, working with the console (reading input and printing results),
                         using conditional statements (if, elif, else) and loops (for-loop, while-loop).
                     </p>
                     <img src="images/tick.png" alt="Done" class="tick">
@@ -101,9 +136,10 @@
                     <img src="images/down-two.png" alt="Down">
                 </div>
 
-                <div class="description-box">
+                <div class="description-box" data-description-id="description2">
                     <h3>Python Fundamentals</h3>
-                    <p>
+                    <h4 class="clickable-description" id="ex2">Expand Course Info</h4>
+                    <p class="clickable-description" id="description2">
                         Programming fundamentals examines the fundamental concepts in programming, which are the 
                         basis for in depth understanding of programming. Building on top of the knowledge already 
                         gained in the programming basics and learning new and more complex programming concepts and 
@@ -122,18 +158,19 @@
                     <img src="images/down-two.png" alt="Down">
                 </div>
 
-                <div class="description-box">
+                <div class="description-box" data-description-id="description3">
                     <h3>Python Advanced</h3>
-                    <p>
+                    <h4 class="clickable-description" id="ex3">Expand Course Info</h4>
+                    <p class="clickable-description" id="description3">
                         The Python Advanced course will build on the Python language skills by exploring 
                         more complex concepts typical for the language. Students lear about creating linear data 
-                        structures, develop problem solving skills by solving algorithmic problems, work with stacks and queues,
-                        tuples and sets (Stacks & Queues, Tuples & Sets), matrices (Multidimentional Lists), as well as 
+                        structures, develop problem-solving skills by solving algorithmic problems, work with stacks and queues,
+                        tuples and sets (Stacks & Queues, Tuples & Sets), matrices (Multidimensional Lists), as well as
                         files and directories.
                     </p>
                     <p>
-                        Familiarization with functional programming paradigm. The course has a deeper look at rtecursive functions,
-                        functions with multiple arguments (*args) and multiple keyword aguments (**kwargs).
+                        Familiarization with functional programming paradigm. The course has a deeper look at recursive functions,
+                        functions with multiple arguments (*args) and multiple keyword arguments (**kwargs).
                     </p>
                     <img src="images/tick.png" alt="Done" class="tick">
                 </div>
@@ -142,15 +179,16 @@
                     <img src="images/down-two.png" alt="Down">
                 </div>
 
-                <div class="description-box">
+                <div class="description-box" data-description-id="description4">
                     <h3>Python OOP</h3>
-                    <p>
+                    <h4 class="clickable-description" id="ex4">Expand Course Info</h4>
+                    <p class="clickable-description" id="description4">
                         Python OOP is teaching students wht principles of object-oriented programming (OOP), 
-                        working with classes and objects, using object oriented modeling, and building class hierarchies.
+                        working with classes and objects, using object-oriented modeling, and building class hierarchies.
                         Basic OOP principles such as Abstraction, Polymorphism, Encapsulation and Inheritance will be studied.
-                        They will enter the most frequently used design patterns (creational, structural and behavioral design patterns).
-                        Introduction to SOLID principles and learning about iteratiors, generators and how to use them.
-                        Attention will be given to component testing (writing unit tests) and the concept of Test Driven Developement (TDD).  
+                        They will enter the most frequently used design patterns (creation, structural and behavioral design patterns).
+                        Introduction to SOLID principles and learning about iterators, generators and how to use them.
+                        Attention will be given to component testing (writing unit tests) and the concept of Test Driven Development (TDD).
                     </p>
                     <img src="images/tick.png" alt="Done" class="tick">
                 </div>
@@ -159,11 +197,12 @@
                     <img src="images/down-two.png" alt="Down">
                 </div>
 
-                <div class="description-box">
+                <div class="description-box" data-description-id="description5">
                     <h3>PostgreSQL</h3>
-                    <p>
+                    <h4 class="clickable-description" id="ex5">Expand Course Info</h4>
+                    <p class="clickable-description" id="description5">
                         Databases are the standard way of using dynamic information with modern technology, making them an indispensable part 
-                        of almost every application. This course will introduce students to the fundamentals of database management system (DBMS) used in the developement 
+                        of almost every application. This course will introduce students to the fundamentals of database management system (DBMS) used in the development
                         of modern information systems - PostgreSQL. The course gives serious attention to relational model, ER diagrams (tables and relational relationships) and working 
                         with the SQL language (data extraction, selection, projection, joins, aggregation, grouping, modification, 
                         deletion and insertion). Will gain fundamental knowledge of working with functions, procedures, 
@@ -173,8 +212,7 @@
                         This course will lay the foundations of working with databases, making it easier to use them 
                         in real-world projects and understanding the concepts such as converting a database into an object-oriented-model (ORM).
                     </p>
-
-                    <div class="loading-circle"></div>
+                    <img src="images/tick.png" alt="Done" class="tick">
                     
                 </div>
                 
@@ -182,9 +220,10 @@
                     <img src="images/down-two.png" alt="Down">
                 </div>
 
-                <div class="description-box">
+                <div class="description-box" data-description-id="description6">
                     <h3>Python ORM</h3>
-                    <p>
+                    <h4 class="clickable-description" id="ex6">Expand Course Info</h4>
+                    <p class="clickable-description" id="description6">
                         Python ORD covers the basics of mapping between a relational database and an object-oriented model (ORM)
                         with a focus on the Django framework. It introduces the students to the ORM and its key concepts and then moves
                         on to working with models in Django, including defining models, fields, and methods. Advanced topics such as migrations
@@ -204,9 +243,10 @@
                     <img src="images/down-two.png" alt="Down">
                 </div>
 
-                <div class="description-box">
-                    <h3>Python Web Developmennt</h3>
-                    <p>
+                <div class="description-box" data-description-id="description7">
+                    <h3>Python Web Development</h3>
+                    <h4 class="clickable-description" id="ex7">Expand Course Info</h4>
+                    <p class="clickable-description" id="description7">
                         In the "Python Web" module, students delve into the fundamentals of web-based technologies, with a particular focus on Django,
                         the preeminent framework in the Python ecosystem. Additionally, the curriculum encompasses the acquisition of essential skills
                         for managing dynamic data through database interactions. The coursework encompasses a progressive journey, commencing with the
@@ -226,9 +266,10 @@
                     <img src="images/down-two.png" alt="Down">
                 </div>
 
-                <div class="description-box">
-                <h3>JS Front-End Developement</h3>
-                <p>
+                <div class="description-box" data-description-id="description8">
+                    <h3>JS Front End Development</h3>
+                    <h4 class="clickable-description" id="ex8">Expand Course Info</h4>
+                    <p class="clickable-description" id="description8">
                     The "JS Front-End" module is designed to impart fundamental proficiency in HTML, CSS, and JavaScript. Participants will acquire a foundational 
                     understanding of web development, web browsers, and the utilization of development tools for HTML/CSS/DOM. This course fosters practical expertise 
                     in employing HTML, the language for describing web content, and CSS, the language for styling web content. Students will gain the competence to 
@@ -275,7 +316,7 @@
                 <p>&copy; 2023 Your Company Name</p>
             </footer>
 
-        </div>
+        </div>  <!-- Content wrapper end  --->
 
 </div>
 
